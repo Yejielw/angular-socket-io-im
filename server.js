@@ -47,7 +47,11 @@ app.get('*', routes.index);
 io.sockets.on('connection', socket);
 
 // Start server
-
-app.listen(3000, function(){
+var port = process.env.PORT || 8000;
+server.listen(port, function() {
+    console.log("App is running on port " + port);
+});
+/*app.listen(3000, function(){
   console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
 });
+*/
