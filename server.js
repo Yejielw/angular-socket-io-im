@@ -48,10 +48,9 @@ io.sockets.on('connection', socket);
 
 // Start server
 var port = process.env.PORT || 8000;
-server.listen(port, function() {
+/*server.listen(port, function() {
     console.log("App is running on port " + port);
-});
-/*app.listen(3000, function(){
+});*/
+app.listen(port, function(){
   console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
 });
-*/
